@@ -27,7 +27,7 @@ const Reservations = () => {
         <div className='grid md:grid-cols-2 gap-4'>
           <div className='grid'>
             <label className='text-white' htmlFor='date'>Date</label>
-            <input type='date' id='date' name='date' required />
+            <input type='date' id='date' name='date' required min={new Date().toISOString().split('T')[0]} />
           </div>
           <div className='grid'>
             <label className='text-white'>Number of Diners</label>
