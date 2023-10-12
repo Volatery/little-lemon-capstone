@@ -29,8 +29,8 @@ const Header = () => {
         {mobileMenu ? <FaTimes/> : <FaBars/>}
       </div>
 
-      <ul className={mobileMenu ? 'absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen gap-4 text-4xl bg-[#495d57] z-10 text-white font-semibold md:hidden' : 'hidden'}>
-        <li onClick={toggleMobileMenu}>Home</li>
+      <ul className={mobileMenu ? 'fixed top-0 left-0 flex flex-col items-center justify-center w-full h-screen gap-4 text-4xl bg-[#495d57] z-10 text-white font-semibold md:hidden' : 'hidden'}>
+        <Link to='/'><li onClick={toggleMobileMenu}>Home</li></Link>
         <li onClick={toggleMobileMenu}>About</li>
         <li onClick={toggleMobileMenu}>Menu</li>
         <li onClick={toggleMobileMenu}>Order</li>

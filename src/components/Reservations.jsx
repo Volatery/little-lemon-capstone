@@ -10,17 +10,17 @@ const Reservations = () => {
     <section className='w-full h-[500px] md:h-[400px] flex flex-col items-center bg-[#495d57] pt-4 px-4'>
       <form onSubmit={handleSubmit} className='w-full max-w-md'>
         <div>
-          <h1 className='text-2xl text-yellow-400 font-semibold mb-8'>Reservations</h1>
+          <h1 className='text-4xl text-yellow-400 font-semibold mb-8'>Reservations</h1>
         </div>
         <div className='grid md:grid-cols-4 items-center text-white mb-8'>
           <label htmlFor='indoor' className='col-span-2'>
             Indoor Seating
-            <input type='radio' id='indoor' name='seating' value='indoor' className='ml-2'></input>
+            <input type='radio' id='indoor' name='seating' value='indoor' className='ml-2' required></input>
           </label>
 
           <label htmlFor='outdoor' className='col-span-2'>
             Outdoor Seating
-            <input type='radio' id='outdoor' name='seating' value='outdoor' className='ml-2'></input>
+            <input type='radio' id='outdoor' name='seating' value='outdoor' className='ml-2' required></input>
           </label>
         </div>
 

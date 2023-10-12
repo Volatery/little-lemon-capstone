@@ -29,6 +29,10 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
+    <>
+    <div className='w-full flex justify-center text-3xl font-bold'>
+      <h1>Testimonials</h1>
+    </div>
     <section className='flex justify-center px-12 lg:px-24 my-12'>
       <div className='grid md:grid-cols-3 gap-4 lg:gap-12 w-[1200px]'>
         {testimonials.map((person) => (
@@ -46,6 +50,7 @@ const Testimonials = () => {
         ))}
       </div>
     </section>
+    </>
   )
 }
 
