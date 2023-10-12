@@ -31,7 +31,7 @@ const Reservations = () => {
           </div>
           <div className='grid'>
             <label className='text-white'>Number of Diners</label>
-            <input type='range' id='numberOfDiners' name='numberOfDiners' min='1' max='10' required></input>
+            <input type='number' id='numberOfDiners' name='numberOfDiners' min='1' max='10' required></input>
         </div>
           <div className='grid'>
             <label className='text-white' htmlFor='occasion'>Occasion</label>
@@ -52,7 +52,6 @@ const Reservations = () => {
         </div>
       </form>
     </section>
-
   )
 }
 

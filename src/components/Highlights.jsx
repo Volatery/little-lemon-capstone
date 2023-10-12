@@ -27,12 +27,12 @@ const highlightDishes = [
 const Highlights = () => {
   return (
     <>
-      <div className='mt-32 flex justify-between items-center px-32 lg:px-60 xl:px-96 flex-col md:flex-row'>
+      <div className='mt-32 flex justify-between items-center px-12 lg:px-60 xl:px-96 flex-col md:flex-row'>
         <h1 className='text-2xl md:text-4xl font-semibold mb-4 md:mb-0'>This weeks specials!</h1>
         <button className='bg-yellow-400 text-black rounded-xl py-2 px-4'>Online Menu</button>
       </div>
       <section className='mt-12 flex justify-center'>
-        <div className='grid md:grid-cols-3 md:gap-32 gap-12'>
+        <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-32'>
           {highlightDishes.map((dish) => (
             <div className='w-[300px] bg-[#495d57] text-white flex flex-col justify-between rounded-3xl' key={dish.id}>
               <img src={dish.img} className='h-[350px] rounded-3xl' alt={dish.name} />
